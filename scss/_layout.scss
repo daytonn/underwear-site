@@ -1,0 +1,15 @@
+#container {
+  @include outer-container;
+}
+
+#header {
+  @include row;
+}
+
+#content {
+  @include row;
+}
+
+#footer {
+  @include row;
+}
