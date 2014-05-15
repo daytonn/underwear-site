@@ -13,7 +13,8 @@
     "express": "~4.0.0",
     "morgan": "~1.0.0",
     "node-sass": "^0.8.6",
-    "static-favicon": "~1.0.0"
+    "static-favicon": "~1.0.0",
+    "underwear": "^2.0.4"
   },
   "devDependencies": {
     "can-compile": "^0.6.0",

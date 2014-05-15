@@ -1,21 +1,4 @@
-<!DOCTYPE html>
-<html>
-  <head>
-    <title><%= title %></title>
-    <link rel='stylesheet' href='/stylesheets/application.css' />
-  </head>
-  <body>
-    <div id="container">
-      <header id="header">
-        <h1><%= title %></h1>
-      </header>
-      <section id="content">
-        <p>Welcome to <%= title %></p>
-      </section>
-      <footer id="footer">
-        &copy; 2014 Underwear.js
-      </footer>
-    </div>
-    <script src="javascripts/application.js"></script>
-  </body>
-</html>
+<%- include layout/header %>
+<p>Welcome to Underwear.js</p>
+<a href="builder">Builder</a>
+<%- include layout/footer %>

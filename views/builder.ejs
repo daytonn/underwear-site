@@ -1,0 +1,8 @@
+<%- include layout/header.ejs %>
+<p>Hello, this is the builder</p>
+<ul>
+  <% underwearFiles.each(function(file) { %>
+    <li><%= file %></li>
+  <% }) %>
+</ul>
+<%- include layout/footer.ejs %>

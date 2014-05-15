@@ -1,9 +1,10 @@
 var express = require('express');
+var fs = require('fs');
 var router = express.Router();
+var underwearFiles = fs.readSync("node_modules/underwear/dist")
 
-/* GET home page. */
 router.get('/', function(req, res) {
-  res.render('index', { title: 'Underwear.js' });
+  res.render('builder');
 });
 
 module.exports = router;

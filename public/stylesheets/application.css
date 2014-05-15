@@ -1,8 +1,3 @@
-* {
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box; }
-
 button, input[type="submit"] {
   border: 1px solid #245aa6;
   border-radius: 3px;
@@ -231,6 +226,11 @@ dl {
 
 
 
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box; }
+
 #container {
   max-width: 68em;
   margin-left: auto;
@@ -246,6 +246,10 @@ dl {
     content: "";
     display: table;
     clear: both; }
+  #header h1 {
+    background-image: url('/images/logo-small.png');
+    background-repeat: no-repeat;
+    padding-left: 60px; }
 
 #content {
   display: block; }

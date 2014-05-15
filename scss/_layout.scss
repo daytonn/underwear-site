@@ -4,6 +4,14 @@
 
 #header {
   @include row;
+
+  h1 {
+    background: {
+      image: url('/images/logo-small.png');
+      repeat: no-repeat;
+    }
+    padding-left: 60px;
+  }
 }
 
 #content {
