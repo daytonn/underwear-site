@@ -1,3 +1,10 @@
+%horizontal-list {
+  list-style-type: none;
+  list-style-position: inside;
+  padding: none;
+  margin: none;
+}
+
 #container {
   @include outer-container;
 }
@@ -11,6 +18,10 @@
       repeat: no-repeat;
     }
     padding-left: 60px;
+
+    a {
+      color: #000;
+    }
   }
 }
 
@@ -20,4 +31,24 @@
 
 #footer {
   @include row;
+}
+
+.components {
+  > li {
+    margin: 1em 0;
+    overflow: hidden;
+
+    h2 {
+      margin: 0 0 .5em 0;
+    }
+  }
+}
+
+.component-files {
+  @include span-columns(12);
+
+  li {
+    @include span-columns(2);
+    @include omega(6n);
+  }
 }

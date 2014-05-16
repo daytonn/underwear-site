@@ -1,0 +1,22 @@
+{
+  "name": "underwear-site",
+  "version": "0.1.0",
+  "homepage": "https://github.com/daytonn/underwear-site",
+  "authors": [
+    "Dayton Nolan <daytonn@gmail.com>"
+  ],
+  "description": "A site for underwear js",
+  "main": "app.js",
+  "license": "Apache 2.0",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "vendor",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "~2.1.1"
+  }
+}

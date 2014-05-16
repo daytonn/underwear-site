@@ -1,8 +1,26 @@
 <%- include layout/header.ejs %>
-<p>Hello, this is the builder</p>
-<ul>
-  <% underwearFiles.each(function(file) { %>
-    <li><%= file %></li>
-  <% }) %>
-</ul>
+<div id="builder">
+  <p>Hello, this is the builder</p>
+
+  <ul class="components">
+    <% _(components).each(function(files, component) { %>
+      <li>
+        <h2>
+          <input type="checkbox" name="<%= component %>-all" id="<%= component %>-all-field" value="<%= component %>-all" class="select-all"/>
+          <%= component %>
+        </h2>
+        <ul class="component-files">
+          <% _(files).each(function(file) { %>
+            <li>
+              <label for="<%= component %>-<%= file %>-field">
+                <input type="checkbox" name="<%= component %>-<%= file %>" id="<%= component %>-<%= file %>-field" value="<%= component %>-<%= file %>" />
+                <%= file %>
+              </label>
+            </li>
+          <% }); %>
+        </ul>
+      </li>
+    <% }) %>
+  </ul>
+</div>
 <%- include layout/footer.ejs %>

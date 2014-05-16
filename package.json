@@ -11,9 +11,11 @@
     "debug": "~0.7.4",
     "ejs": "~0.8.5",
     "express": "~4.0.0",
+    "glob": "^3.2.9",
     "morgan": "~1.0.0",
     "node-sass": "^0.8.6",
     "static-favicon": "~1.0.0",
+    "underscore": "^1.6.0",
     "underwear": "^2.0.4"
   },
   "devDependencies": {
